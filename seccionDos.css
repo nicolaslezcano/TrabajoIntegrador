@@ -1,0 +1,136 @@
+
+.nosotros{
+    height: 641px;
+    background-image:linear-gradient(var(--color-oscuro), rgba(0, 0, 0, 0.8)), url(img/pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto
+}
+
+.nosotros-textos{
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    float: left;
+    line-height: 1.8;
+}
+
+.nosotros-img{
+    width: 460px;
+    float: left;
+    margin: 15px;
+}
+
+.nosotros-foto{
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--color-violeta);
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.nosotros-foto:hover{
+    box-shadow: 0 0 10px 5px var(--color-violeta);
+    transition: 1.5s;
+    transform: translateY(-10px);
+}
+
+.nosotros-titulo-img{
+    display: flex;
+    align-items: center;
+}
+
+.nosotros-titulo-img img{
+    width: 50px;
+    margin-left: 10px;
+}
+
+.nosotros-titulo{
+    color: var(--color-blanco);
+    font-family: var(--font--jetBreins);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nosotros-lista{
+    color: var(--color-blanco);
+    font-family: var(--font--jetBreins);
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+
+
+@media screen and (max-width: 959px){
+    .nosotros-contenedor{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nosotros-textos{
+        width: 70%;
+        text-align: center;
+    }
+
+    .nosotros-img{
+        width: 30%;
+        display: none;
+    }
+
+    .nosotros-foto{
+        width: 100%;
+        display: none;
+    }
+
+    .nosotros-titulo-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .nosotros-img, .nosotros-foto{
+        display: none;
+    }
+
+    .nosotros-textos{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .nosotros-titulo-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 350px){
+    .nosotros-lista{
+        color: var(--color-blanco);
+        font-family: var(--font--jetBreins);
+        font-size: 14px;
+        padding: 0px 5px;
+    }
+}
