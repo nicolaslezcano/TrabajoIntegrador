@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-violeta: #e59cff;
+    --color-verde: #4cffa9;
+    --color-oscuro: #090a0a;
+    --color-negro: #1e1f29;
+    --color-blanco: #fff;
+    --font-arimo: 'Arimo', sans-serif;
+    --font--jetBreins: 'JetBrains Mono', monospace;
+}
+
+.horizontal-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.vertical-padding {
+padding-top: 25px;
+padding-bottom: 25px;
+}
